@@ -1,6 +1,8 @@
 alias tfp='terraform plan'
+alias tfps='tfp --var-file=secret.tfvars'
 # Add tfplan to gitignore
-alias tfpo='terraform plan -out tfplan'
+alias tfpo='tfp -out tfplan'
+alias tfpos='tfpo --var-file=secret.tfvars'
 
 alias tfa='terraform apply'
 alias tfaa='terraform apply -auto-approve'
@@ -19,3 +21,4 @@ alias tfs='terraform state'
 alias tfw='terraform workspace'
 alias tfgu='terraform get --update'
 alias tfim='terraform import'
+
